@@ -18,7 +18,8 @@ window.PROJECTS = [
     id: "p3",
     title: "Animated Short — 'Gate of Illusions'",
     excerpt: "Storyboard & animated fight scene. (placeholder)",
-    image: "assets/images/placeholder-1.jpg",
+    image: "assets/images/IMG_0156.jpeg",
     url: "projects.html#p3"
   }
 ];
+
