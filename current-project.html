@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Current Project — Brandon Tome Diaz</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="brand">Tome Diaz</span></a>
+      <nav class="nav">
+        <a href="index.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="current-project.html" class="pill">Current Project</a>
+        <a href="contact.html" class="cta">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section-header">
+      <h1>Current Project</h1>
+      <p>Live updates and progress on the project you're most focused on.</p>
+    </section>
+
+    <section id="current-project" class="current-project">
+      <!-- Will be loaded from data/current-project.json by JS -->
+      <div class="project-left">
+        <div class="project-media card">
+          <img src="assets/images/placeholder-1.jpg" alt="Current project screenshot">
+        </div>
+      </div>
+      <div class="project-right">
+        <h2 id="cp-title">Project Title (placeholder)</h2>
+        <p id="cp-desc">Short description placeholder. Replace contents in data/current-project.json.</p>
+
+        <div class="progress">
+          <label for="progress">Progress</label>
+          <div class="progress-bar" aria-hidden="true">
+            <div class="progress-fill" id="progress-fill" style="width: 45%"></div>
+          </div>
+          <div id="progress-label">45%</div>
+        </div>
+
+        <div class="project-meta">
+          <p><strong>Started:</strong> <span id="cp-start">—</span></p>
+          <p><strong>Expected:</strong> <span id="cp-end">—</span></p>
+          <a id="cp-repo" class="link" href="#" target="_blank">Repository / Demo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <div>© <span id="year6"></span> Tome Diaz</div>
+  </footer>
+
+  <script src="data/current-project.json" type="application/json"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/projects-data.js" defer></script>
+</body>
+</html>

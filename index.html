@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Brandon Tome Diaz — Portfolio</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <!-- Placeholder SVG / text logo -->
+        <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        <span class="brand">Tome Diaz</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="current-project.html" class="pill">Current Project</a>
+        <a href="contact.html" class="cta">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1 class="hero-title">Brandon — Creative / Engineer</h1>
+          <p class="hero-sub">Professional yet experimental. Building systems, telling stories, and documenting the climb.</p>
+          <div class="hero-ctas">
+            <a class="btn" href="projects.html">Explore Projects</a>
+            <a class="btn ghost" href="current-project.html">Current Project</a>
+          </div>
+
+          <dl class="meta-list">
+            <div><dt>Focus</dt><dd>Mechatronics, Interactive Design, Visual Media</dd></div>
+            <div><dt>Goals</dt><dd>Impress colleges • Document progress • Build</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-visual">
+          <!-- Placeholder image -->
+          <div class="card visual-card">
+            <img src="assets/images/placeholder-1.jpg" alt="Project placeholder" />
+            <div class="glow-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about container">
+      <h2>About</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>[PLACEHOLDER — Write a short, 2–4 sentence bio here: background, what you build, and why.]</p>
+          <ul class="skills">
+            <li>Mechatronics</li>
+            <li>Front-end & UI</li>
+            <li>3D & Motion</li>
+            <li>Writing & Research</li>
+          </ul>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <strong>2026</strong>
+            <span>Graduation Year</span>
+          </div>
+          <div class="stat">
+            <strong>5+</strong>
+            <span>Projects Published</span>
+          </div>
+          <div class="stat">
+            <strong>—</strong>
+            <span>Open to opportunities</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured container">
+      <h2>Featured Projects</h2>
+      <div class="cards-grid" id="featured-projects">
+        <!-- JS will inject project cards; fallback placeholders below -->
+        <article class="project-card">
+          <img src="assets/images/placeholder-1.jpg" alt="placeholder">
+          <div class="project-card-body">
+            <h3>Project Title (Placeholder)</h3>
+            <p>Short project description placeholder — 1–2 lines.</p>
+            <a class="link" href="projects.html">View project →</a>
+          </div>
+        </article>
+        <!-- add more placeholders as needed -->
+      </div>
+    </section>
+
+    <section class="subscribe container">
+      <h2>Updates</h2>
+      <p>Subscribe for occasional updates on current builds and blog posts.</p>
+      <form class="subscribe-form" action="#" method="POST">
+        <input type="email" name="email" placeholder="you@domain.com" aria-label="Email address" required>
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Tome Diaz — All rights reserved.</div>
+      <div class="social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Twitter">X</a>
+        <a href="#" aria-label="GitHub">GH</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/projects-data.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

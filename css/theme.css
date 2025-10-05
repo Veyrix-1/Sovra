@@ -1,0 +1,33 @@
+/* Glow + subtle sovra-eclipse accents */
+.glow-overlay{
+  position:absolute;
+  top:0;left:0;right:0;bottom:0;
+  pointer-events:none;
+  background:linear-gradient(180deg, rgba(139,92,246,0.12), rgba(99,102,241,0.06));
+  mix-blend-mode:screen;
+}
+
+.pill{background:linear-gradient(90deg,var(--accent1),var(--accent2));color:white}
+
+.site-header .brand{letter-spacing:2px}
+
+/* small glyph background for sovra vibe */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background-image: radial-gradient(rgba(255,255,255,0.01) 1px, transparent 1px);
+  background-size:240px 240px;
+  opacity:0.03;
+  pointer-events:none;
+  z-index:0;
+}
+
+/* soft vignette */
+body::after{
+  content:"";
+  position:fixed;inset:0;
+  box-shadow: inset 0 0 240px rgba(0,0,0,0.5);
+  pointer-events:none;
+  z-index:0;
+}

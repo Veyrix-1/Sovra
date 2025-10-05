@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Brandon Tome Diaz</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="brand">Tome Diaz</span></a>
+      <nav class="nav">
+        <a href="index.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="current-project.html" class="pill">Current Project</a>
+        <a href="contact.html" class="cta">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section-header">
+      <h1>Contact</h1>
+      <p>Want to work together or ask a question? Use the form below or reach out on socials.</p>
+    </section>
+
+    <section class="contact-grid">
+      <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@domain.com" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="6" placeholder="Write your message..." required></textarea>
+        </label>
+        <button class="btn" type="submit">Send</button>
+      </form>
+
+      <aside class="contact-info">
+        <h3>Other ways</h3>
+        <p><strong>Email:</strong> <a href="mailto:you@domain.com">you@domain.com</a></p>
+        <p><strong>Socials:</strong> Links to IG / GitHub / X</p>
+        <p><strong>Resume:</strong> <a href="#">Download (placeholder)</a></p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <div>© <span id="year5"></span> Tome Diaz</div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
