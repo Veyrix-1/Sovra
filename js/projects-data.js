@@ -20,6 +20,14 @@ window.PROJECTS = [
     excerpt: "Storyboard & animated fight scene. (placeholder)",
     image: "assets/images/IMG_0156.jpeg",
     url: "projects.html#p3"
+  },
+    {
+    id: "p4",
+    title: "Placeholder'",
+    excerpt: " (placeholder)",
+    image: "assets/images/IMG_0156.jpeg",
+    url: "projects.html#p4"
   }
 ];
+
 
